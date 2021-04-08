@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>¿Que comemos hoy?</title>
+	<link rel="icon" href="img/favicon.png">
+	<link rel="stylesheet" href="css/stilo.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link href="https://fonts.googleapis.com/css2?family=Amatic+SC&family=Inconsolata&family=Indie+Flower&display=swap" rel="stylesheet">
+</head>
+<body>
+	<header>
+		<nav class="nav">
+			<ul>
+			<li><a href=""><img class="imgMenu" src="img/iconoMenu.png" alt="icono menu"></a>
+				<ul>
+					<li><a class="submenu" href="">Recibi nuestros menu semanales!</a></li>
+					<li><a class="submenu" href="">Trabaja con nosotros!</a></li>
+				</ul>
+			</li>
+			</ul>
+		</nav>
+		<section class="textosHeader">
+			<h1>¿Que vamos a comer?</h1>
+		</section>
+		<div class="carroDeCompras">
+			<ul>
+			<li><img class="imgCarro" src="img/carroDeCompras.png" alt="logo carro de compras"></a>
+				<ul id="position">
+					<div id="carrito">
+						<table id="lista-carrito">
+							<thead>
+								<tr class="listaCarritoPadding">
+									<th>Imagen</th>
+									<th>Nombre</th>
+									<th>Precio</th>
+									<th>Cantidad</th>
+									<th></th>
+								</tr>
+							</thead>
+							<tbody class="textoDesdeJs"></tbody>
+						</table>
+							<a href="#" id="vaciar-carrito" class="button u-full-width">Vaciar Carrito</a>
+							<p class="montoTotal"> </p>
+					</div>
+				</ul>
+			</li>
+			</ul>
+		</div>
+	</header>	
+	<section class="imgFondo">
+		<div class="textos">
+			<h1>Elegí deleitarte con la mejor gastronomía.</h1>
+			<h2>Disfruta de un mundo de sabores</h2>
+		</div>
+	</section>
+	<section class="container">
+		<div class="menu" id="lista-productos">
+			<h1>¿Que vas a desgustar hoy?</h1>
+			<div class="galeriaImagenes">
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-1.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Ensalada Nicoise</h1>
+						<p>$380</p>
+						<a href="#" class="boton agregar-carrito" data-id="1">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-2.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Tapeo</h1>
+						<p>$250</p>
+						<a href="#" class="boton agregar-carrito" data-id="2">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-3.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Langostinos apanados</h1>
+						<p>$650</p>
+						<a href="#" class="boton agregar-carrito" data-id="3">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-4.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Sushi de Crepe de Tofu</h1>
+						<p>$820</p>
+						<a href="#" class="boton agregar-carrito" data-id="4">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-5.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Pollo asado</h1>
+						<p>$1620</p>
+						<a href="#" class="boton agregar-carrito" data-id="5">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-6.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Ensalada Chop Chop</h1>
+						<p>$770</p>
+						<a href="#" class="boton agregar-carrito" data-id="6">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-7.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Estofado con Costillas</h1>
+						<p>$582</p>
+						<a href="#" class="boton agregar-carrito" data-id="7">Agregar al carrito</a>
+					</div>
+				</div>
+				
+				<div class="bloque-img-text">
+					<div class="imgMenuComidas">					
+						<img src="img/img-10.jpg" alt="imagen descriptiva menu" class="zoom">
+					</div>
+					<div class="textMenu">
+						<h1>Picada especial</h1>
+						<p>$1025</p>
+						<a href="#" class="boton agregar-carrito" data-id="8">Agregar al carrito</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="contFooter">
+			<h1>Gracias por tu pedido.</h1>			
+		</div>
+	</footer>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+<script src="js/app.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10"></script>
+<script src="js/sweetAlert.js"></script>
+</body>
+</html>

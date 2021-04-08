@@ -1,0 +1,312 @@
+*{
+	margin:0;
+	padding:0;
+	box-sizing: border-box;
+}
+body{
+	font-family:'Amatic SC', cursive;
+}
+body::-webkit-scrollbar{
+	width:7px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #9A0000;
+	border-radius: 5px;
+}
+
+/*header*/
+header{
+	width: 100%;
+	height:90px;
+	top:0;
+	background: #9A0000;
+	position: fixed;
+	display: flex;
+	justify-content: space-between;
+}
+.nav{
+	margin-left: 30px;
+	margin-top: 20px;
+}
+
+
+ul {
+	list-style: none;
+	font-size:0 
+}
+li {
+	display: inline-block;
+	width: 25%;
+	
+}
+ul ul {
+	position: absolute;
+	display: none;
+	background: #595959;
+	border-radius: 10px;
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+	align-items: center;
+}
+ul ul li {
+	display: block;
+	width: 250px;
+	height: 60px;
+	font-size: 20px;
+	font-weight: 200;
+	text-align:center;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+ul li:hover ul {
+	display:block;
+}
+
+.listaCarritoPadding th{
+	padding-top: 10px;
+	padding-bottom: 20px;
+	font-size: 25px;
+}
+
+.submenu{
+	color: white;
+	text-decoration: none;
+	display: inline-block;
+	text-align: center;
+	align-items: center;
+	 
+}
+
+.carroDeCompras{
+	margin-right: 30px;
+	margin-top: 20px;
+
+}
+.textosHeader{
+	padding-top: 15px;
+	font-size: 40px;
+	color: white;
+}
+.imgMenu{
+	width: 30px;
+	margin-top: 10px;
+}
+.imgCarro{
+	width: 40px;
+	margin-top: 10px;
+}
+
+.submenu #carrito{
+    display: none;
+}
+
+#carrito{
+	display: block;
+	font-size: 20px;
+	font-weight: 200;
+	text-align:center;
+	padding-top: 10px;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	overflow-y:scroll;
+	height:500px;
+	width: 450px;
+}
+
+/* Estilo de Scroll */
+
+#carrito::-webkit-scrollbar{
+	width:7px;
+}
+#carrito::-webkit-scrollbar-thumb {
+	background: #9A0000;
+	border-radius: 5px;
+}
+
+#position{
+	position: fixed;
+	right: 20px;
+}
+
+tr th {
+	padding-left: 12px;
+}
+
+/*header img*/
+
+.imgFondo{
+	margin-top: 90px;
+	background-image: url(../img/portada.jpg);
+	width: 100%;
+	height: 600px;
+	background-size: cover;
+	background-attachment: scroll;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.textos{
+	display: flex;
+	width:550px;
+	height: 250px;
+	background-color: rgba(216, 201, 214, .8);
+	border-radius: 8px;
+	box-shadow: 0 0 10px 0 rgba(0, 0, 0, .5);
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	text-align: center;
+}
+
+.textos >h1{
+	font-size: 40px;
+	color:black;
+	margin-bottom: 30px;
+}
+.textos >h2{
+	font-size: 30px;
+	color:black;
+	font-weight: 300;
+}
+
+/*menu*/
+
+.container{
+	padding: 60px 0;
+	width: 95%;
+	max-width: 1100px;
+	margin:auto;
+	overflow: hidden;
+}
+
+.menu{
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center; 
+}
+.menu >h1{
+	font-size: 40px;
+	font-weight: 300;
+}
+.galeriaImagenes{
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	margin-top: 60px;
+}
+.bloque-img-text{
+	width: 23%;
+	margin-bottom: 20px;
+	height: 330px;
+	margin-left:8px; 
+	box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.5);
+	
+}
+.imgMenuComidas{
+	width: 100%;
+	height: 200px; 
+}
+.imgMenuComidas img{
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	display: block;
+}
+.textMenu{
+	margin-left: 10px;
+	margin-top: 10px;
+}
+
+.textMenu p {
+	font-weight: bold;
+	font-size: 30px;
+}
+
+.textMenu h1 {
+	font-weight: bold;
+	font-size: 35px;
+}
+
+/*Pie de pagina*/
+.contFooter{
+	background: #4B4B4B;
+	width: 100%;
+	height: 65px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.contFooter >h1 {
+	color: white; 
+	font-weight: 200;
+}
+
+/*Estilos botones +, -, y x */
+
+#estiloBotonesRow {
+	text-decoration: none;
+	background: #9A0000;
+	background-position: 70% 30%;
+	color: #fff;
+	border-radius: 50%;
+	display: inline-block;
+	justify-content: center;
+	align-content: center;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	padding-bottom: 25px;
+	margin-right: 3px;
+} 
+
+.textoDesdeJs{
+	font-family: monserrat;
+}
+
+.montoTotal{
+	font-size: 35px;
+	font-weight: bold;
+	margin-top: 8px;
+}
+
+.button{
+	text-decoration: none;
+	color: #9A0000;
+	font-weight: bold;
+}
+
+.boton{
+	text-decoration: none;
+	color: #9A0000;
+	font-weight: bold;
+	font-size: 25px;
+	display:flex;
+	justify-content: center;
+}
+
+/*codigo para transition jquery*/
+
+img.zoom {
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    -ms-transition: all .2s ease-in-out;
+}
+ 
+.transition {
+    -webkit-transform: scale(1.3); 
+    -moz-transform: scale(1.3);
+    -o-transform: scale(1.3);
+    transform: scale(1.3);
+}
+
+
+/* Codigo sweetAlert */
+
+.sweetAlert{
+	color: white;
+	padding-left: 30px;
+	font-size: 30px;
+}
